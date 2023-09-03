@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+    />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abhay's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicons.svg"
+      type="image/png"
+    />
+
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+
+    <title>Abhay Kumar's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button" class="menu-btn">Menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">Projects</a></li>
+          <li class="nav-item"><a href="#blog">About Me</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- About Me on Main Page -->
+          <h1 class="h1">
+            Hi, I'm <span class="name-color">Abhay Kumar</span><br />
+            A Frontend Developer
+          </h1>
+
+          <!-- A small introduction of me -->
+          <p class="header-text">
+            A frontend developer with an unquenchable thirst for all things tech. My world revolves around coding to craft visually stunning and user-friendly websites.
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Contact Me</a>
+            <a href="#work" class="btn btn-secondary">My Projects</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Projects/Work-->
+
+    <main>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Projects</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Portfolio Website</h3>
+                <p class="work-text">
+                  Created my own portfolio website using HTML, CSS 
+                  and Javascript
+                </p>
+                <ol class="work-technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                </ol>
+
+                <div class="work-links">
+                  <a href="#" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/darkportfolio.png"
+                  alt="darkportfolio"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Calculator App</h3>
+                <p class="work-text">Created a Calculator App using
+                  HTML CSS and JavaScript
+                </p>
+                <ol class="work-technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ol>
+                <div class="work-links">
+                  <a href="https://abhaykumar1321.github.io/newCalcDesign/" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                  <a
+                    href="https://github.com/abhaykumar1321/newCalcDesign/tree/main"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/Calculator.png"
+                  alt="calculator app"
+                />
+              </picture>
+            </div>
+          
+      </section>
+
+      <!--Article About Me-->
+
+      <section class="article">
+        <div class="container">
+          <h2 class="h2" id="blog">About Me</h2>
+          <div class="article-boxes">
+            <article class="article-box featured-article">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h3">
+                    A Passionate and Creative Web Developer
+                  </h3>
+                  <p class="article-text">
+                    As a passionate and creative developer, I strive to develop beautiful, functional, and user-friendly web applications. 
+                    In addition to learning new technologies and frameworks, I also enjoy improving my skills and delivering better products. 
+                    The technologies and frameworks I use include HTML, CSS, JavaScript, React.js, Bootstrap, Tailwind CSS, GitHub etc.
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="Abhay Kumar Frontend CV.pdf" class="link" target="_blank" rel="noopener"
+                    >Download My CV</a
+                  >
+                </div>
+              </div>
+              <picture class="article-illustration">
+                <img
+                  src="assets/images/laptop2.jpg"
+                  alt="MacBook"
+                  loading="lazy"
+                />
+              </picture>
+            </article>
+           
+            <!--Certification-->
+
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Meta Front-end Developer Professional Certificate</h3>
+                  <p class="article-text">
+                    This immersive program has been an incredible journey, during which I've had the opportunity to 
+                    delve deep into a multitude of cutting-edge technologies and frontend development techniques. 
+                    </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://www.credly.com/badges/0260a953-b2d4-47fe-bb88-c6bf939853e6/linked_in_profile" class="link" target="_blank" rel="noopener"
+                    >Certificate</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">
+                    Responsive Web Design by freeCodeCamp
+                  </h3>
+                  <p class="article-text">
+                    Throughout this course,  I've honed my ability to create 
+                    fluid layouts, style elements effectively, and implement media queries to ensure a consistent user experience across different devices. 
+                  </p>
+                </div>
+                <div class="article-info">
+                  <a href="https://www.freecodecamp.org/certification/fccaba0662a-7e0c-482a-9a48-da1f1c6b628d/responsive-web-design" class="link" target="_blank" rel="noopener"
+                    >Certificate</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="article-box">
+              <div class="article-textbox">
+                <div>
+                  <h3 class="h4">Web Design For Everybody
+                    by University of Michigan
+                  </h3>
+                  <div class="article-text">
+                    This course "Web Design For Everybody" put me on the verge of entering a dynamic and ever-evolving field - web design. 
+                    It wasn't the end of a journey, but rather the start of an exciting new chapter.
+                  </div>
+                </div>
+                <div class="article-info">
+                  <a href="#" class="link" target="_blank" rel="noopener"
+                    >Certificate</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">My Skills</h2>
+          <div class="skills-imgs">
+                <img src="assets/images/skills/html.png" alt="HTML" class="skills-img" loading="lazy" title="HTML">
+                <img src="assets/images/skills/css.png" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+                 <img src="assets/images/skills/js.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+                 <img src="assets/images/skills/bootstrap.png" alt="Bootstrap" class="skills-img" loading="lazy" title="Bootstrap">
+                 <img src="assets/images/skills/react.png" alt="ReactJS" class="skills-img" loading="lazy" title="ReactJS">
+                 <img src="assets/images/skills/tailwind.png" alt="Tailwind" class="skills-img" loading="lazy" title="Tailwind">
+                 <img src="assets/images/skills/github.png" alt="GitHub" class="skills-img" loading="lazy" title="GitHub">
+                 <img src="assets/images/skills/git.png" alt="Git" class="skills-img" loading="lazy" title="Git">
+                 <img src="assets/images/skills/vscode.png" alt="VS Code" class="skills-img" loading="lazy" title="VS Code">
+                 <img src="assets/images/skills/nextjs.png" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Testomonials -->
+
+      <section>
+        <h2 class="h2">What Developers Say About Me?</h2>
+        <div class="container">
+          <ol class="testimonials">
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Abhay is not just a friend; he's an aspiring frontend developer with an 
+                incredible talent that never ceases to amaze me. 
+                His passion for web development is truly inspiring, and I have no doubt 
+                that he has the potential to build exceptional products and designs.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/rajat.png"
+                  alt="Rajat"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Rajat Kumar</h3>
+                  <p class="testimonial-author-job">SDE-III @Google</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                What impresses me the most about Abhay is his unwavering commitment 
+                to continuous learning. He's always up-to-date with the latest web development 
+                trends and technologies, and he's never afraid to dive into uncharted territory 
+                to expand his knowledge.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/raj.png"
+                  alt="Raj"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">
+                   Raj Saini
+                  </h3>
+                  <p class="testimonial-author-job">Sr. Full Stack Developer @uCertify
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                As Abhay continues his journey as an aspiring frontend developer, I am 
+                excited to see the incredible products and designs he will create. 
+                With his talent, dedication, and a passion for web development that 
+                knows no bounds, I wholeheartedly believe that he is destined to achieve great things in this field.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/vishal.png"
+                  alt="Vishal"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Vishal Raj</h3>
+                  <p class="testimonial-author-job">Sr. Application Developer @uCertify</p>
+                </figcaption>
+              </figure>
+            </li>          
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <!-- Form to contact and my current status for opportunities -->
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Open to Work
+              </strong>
+              <p class="contact-text">
+                I am open to opportunities as a frontend developer to 
+                kickstart my career. Passionate about creating visually 
+                stunning and user-friendly websites, I am dedicated to 
+                delivering exceptional user experiences through clean and 
+                efficient code. With a strong foundation in HTML, CSS, and 
+                JavaScript, I am eager to collaborate on projects that challenge me 
+                to grow and innovate in the world of web development. 
+                Let's connect and explore how I can contribute to your team and make a meaningful impact.
+              </p>
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/abhaykumar1321" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/abhay-kumar-b20363241/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+
+              <li class="footer-link">
+                <a title="Gmail" href="mailto:abhaykumar132116@gmail.com" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/gmail.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; 2023 - Developed by <a target="_blank" rel="noopener" href="https://github.com/devsyedmohsin">Abhay Kumar</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
